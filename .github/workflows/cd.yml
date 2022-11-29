@@ -15,7 +15,7 @@ jobs:
       env:
         HOST: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USERNAME }}
-        KEY: ${{ secrets.PRIVATE_KEY }}
+        PASSWORD: ${{ secrets.PASSWORD }}
       with:
         source: "."
         target: "/usr/share/nginx/html/devops_shuvo/react-exp/"
@@ -25,5 +25,5 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USERNAME }}
-        KEY: ${{ secrets.PRIVATE_KEY }}
+        PASSWORD: ${{ secrets.PASSWORD }}
         script: ls
